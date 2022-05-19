@@ -10,17 +10,10 @@ import { NavController } from '@ionic/angular';
 export class HomePage {
 
   constructor(public alertController: AlertController, public navegador: NavController) {}
-
-  async exibirAlerta() {
-
-    const alert = await this.alertController.create({
-      cssClass: 'my-custom-class',
-      header: 'Oii!',
-      subHeader: 'Success',
-      message: 'Você foi cadastrado com successo',
-      buttons: ['OK']
-    });
-
-    await alert.present();
+  paginaPrincipal() {
+    this.navegador.navigateForward('pagina-principal');
+  }
+  paginaCadastro() {
+    this.navegador.navigateForward('cadastro');
   }
 }

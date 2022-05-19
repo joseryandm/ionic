@@ -8,12 +8,12 @@
 }
 
 #container strong {
-    font-size: 20px;
+    font-size: 1.2rem;
     line-height: 26px;
 }
 
 #container p {
-    font-size: 16px;
+    font-size: 1.2rem;
     line-height: 22px;
     color: #8c8c8c;
     margin: 0;
@@ -31,23 +31,22 @@
     font-family: 'lobster';
 }
 
-#btl {
-    font-family: 'lobster';
-    margin-right: 10px;
-    width: 35%;
-}
-
 #btc {
     font-family: 'lobster';
     margin-left: 10px;
     width: 47%;
 }
 
-#login,
+#cadastro,
 #username,
 #senha {
     font-family: 'lobster';
     text-align: center;
     font-size: 1.5em;
     color: white;
+}
+
+#check {
+    height: 70px;
+    overflow: auto;
 }

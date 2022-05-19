@@ -1,39 +1,28 @@
 <ion-header [translucent]="true">
     <ion-toolbar>
-        <ion-title>
-            Cadastro
+        <ion-title id="login">
+            Login
         </ion-title>
     </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" id="back">
     <ion-header collapse="condense">
         <ion-toolbar>
-            <ion-title size="medium">Cadastro</ion-title>
+            <ion-title id="login">Login</ion-title>
         </ion-toolbar>
     </ion-header>
     <ion-item>
-        <ion-label position="floating">Nome Completo:</ion-label>
-        <ion-input></ion-input>
+        <ion-label position="floating" id="username">Username:</ion-label>
+        <ion-input type="text"></ion-input>
     </ion-item>
     <ion-item>
-        <ion-label position="floating">Email:</ion-label>
-        <ion-input type="email"></ion-input>
+        <ion-label position="floating" id="senha">Senha:</ion-label>
+        <ion-input type="password"></ion-input>
     </ion-item>
-    <ion-item>
-        <ion-label position="floating">CEP:</ion-label>
-        <ion-input></ion-input>
-    </ion-item>
-    <ion-item>
-        <ion-label position="stacked">Data de Nascimento:</ion-label>
-        <ion-input type="date"></ion-input>
-    </ion-item>
-    <ion-item>
-        <ion-label position="floating">Idade:</ion-label>
-        <ion-input type="number"></ion-input>
-    </ion-item>
-    <div>
-        <p></p>
-        <ion-button color="primary" expand="block" (click)="exibirAlerta()">Cadastrar-se</ion-button>
+    <br>
+    <div id="btt">
+        <ion-button color="primary" id="btl" (click)="paginaPrincipal()">Login</ion-button>
+        <ion-button color="primary" id="btc" (click)="paginaCadastro()">Cadastrar-se</ion-button>
     </div>
 </ion-content>
