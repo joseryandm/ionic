@@ -1,21 +1,159 @@
 #imperial {
-    top: 100px;
-    left: 10px;
-}
-
-#nameimp {
-    float: left;
+    top: 80px;
+    left: 5px;
 }
 
 #logo {
     max-width: 50px;
     max-height: 50px;
+    position: relative;
+    top: 5px;
+}
+
+#twitter {
+    color: #00acee;
+    position: absolute;
+    top: 10px;
+    float: right;
+    right: 5%;
+    width: 35px;
+    height: 35px;
 }
 
 #Brazil {
-    top: 100px;
+    position: absolute;
+    top: 14px;
     float: right;
-    right: 20px;
+    right: 200px;
     max-width: 20px;
     max-height: 20px;
+}
+
+#nameimp {
+    position: absolute;
+    top: 10px;
+    float: right;
+    right: 50%;
+    font-family: 'lobster';
+    font-size: 1.5rem;
+}
+
+#namebra {
+    position: absolute;
+    top: 1px;
+    font-size: 0.7rem;
+    float: right;
+    right: 61%;
+    color: gray;
+    font-family: 'lobster';
+}
+
+#profile-team {
+    border-bottom: 1px solid #495867;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-family: 'lobster';
+    font-size: 1.0rem;
+}
+
+#profile-team-stats {
+    border-bottom: 1px solid #495867;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-family: 'lobster';
+    font-size: 0.9rem;
+}
+
+#profile-team-stats-age {
+    border-bottom: 1px solid #495867;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-family: 'lobster';
+    font-size: 0.9rem;
+}
+
+#profile-team-coach {
+    border-bottom: 1px solid #495867;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-family: 'lobster';
+    font-size: 0.9rem;
+}
+
+#spanCoach {
+    font-size: 0.8rem;
+    color: #87a3bf;
+    float: right;
+}
+
+#span1,
+#span2,
+#span3,
+#span4 {
+    float: right;
+    right: 10px;
+    position: absolute;
+}
+
+#span {
+    color: lightgray;
+}
+
+#a,
+#a1 {
+    text-decoration: none;
+    color: #87a3bf;
+    font-family: 'lobster';
+}
+
+#Brazil1 {
+    max-width: 20px;
+    max-height: 20px;
+    float: right;
+    right: 145px;
+    position: absolute;
+}
+
+#teamLogo {
+    margin-top: 10px;
+    max-width: 90px;
+    max-height: 90px;
+    opacity: .65;
+    position: absolute;
+    float: left;
+    left: 5px;
+}
+
+#FNX {
+    margin-top: 4px;
+    max-width: 100px;
+    max-height: 100px;
+    position: absolute;
+    float: left;
+    left: 3px;
+}
+
+#fnxbox {
+    height: 101px;
+    width: 101px;
+    background-color: blueviolet;
+    margin-top: 5px;
+    position: fixed;
+}
+
+#profile-fnx {
+    margin-top: 4px;
+    position: absolute;
+    font-size: 0.7rem;
+    float: left;
+    left: 120px;
+    width: 180px;
+    border-bottom: 1px solid #495867;
+    padding-bottom: 3px;
+}
+
+#idade {
+    float: left;
+    left: 108px;
+    position: absolute;
 }

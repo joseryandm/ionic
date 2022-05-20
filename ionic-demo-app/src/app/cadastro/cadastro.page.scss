@@ -37,16 +37,27 @@
     width: 47%;
 }
 
-#cadastro,
+#name,
 #username,
+#email,
+#date,
+#Q,
+#check,
 #senha {
     font-family: 'lobster';
-    text-align: center;
-    font-size: 1.5em;
+    text-align: left;
+    font-size: 1.2rem;
     color: white;
 }
 
 #check {
     height: 70px;
     overflow: auto;
+}
+
+#cadastro {
+    font-family: 'lobster';
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
 }
