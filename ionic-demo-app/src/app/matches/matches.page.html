@@ -1,9 +1,53 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>matches</ion-title>
-  </ion-toolbar>
-</ion-header>
-
+<ion-tab-bar slot="top">
+    <ion-tab-button (click)="paginaPrincipal()" tab="home">
+        <ion-icon name="home"></ion-icon>
+        <ion-label>Home</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="Matches">
+        <ion-icon name="contract-outline"></ion-icon>
+        <ion-label>Matches</ion-label>
+    </ion-tab-button>
+    <ion-tab-button (click)="exibirResults()" tab="Results">
+        <ion-icon name="bar-chart-outline"></ion-icon>
+        <ion-label>Results</ion-label>
+    </ion-tab-button>
+</ion-tab-bar>
 <ion-content>
-
+    <div id="back">
+        <div id="matchesBox">
+            <h2 id="headline">Match stats for Imperial</h2>
+            <div id="statsBox">
+                <div id="stat">
+                    <div id="stats">0</div>
+                    <div id="description">Current win streak</div>
+                </div>
+                <div id="stat2">
+                    <div id="stats2">65.6%</div>
+                    <div id="description2">Win rate</div>
+                    <div id="timeSpan">Last 3 months</div>
+                </div>
+            </div>
+            <h2 id="headline2">Upcoming matches for Imperial</h2>
+            <div id="table">
+                <span id="date">Date</span>
+                <span id="matches">Matches</span>
+            </div>
+            <div id="statsBox2">
+                <div id="stat3">ESL Challenger Valencia 2022 North America Open Qualifier 2</div>
+            </div>
+            <div id="table1">
+                <span id="date1">19:00</span>
+                <span id="matches1">Matches</span>
+            </div>
+            <div id="times">
+                <ion-img id="logo" src="https://img-cdn.hltv.org/teamlogo/WF5P55R5fxcmhoew6vHZQr.png?ixlib=java-2.1.0&w=200&s=993151de8af78c610d7b6da11ac954b9"></ion-img>
+                <ion-img id="logo2" src="https://img-cdn.hltv.org/teamlogo/MdcIVSa8GMT8794AzRRzfq.png?ixlib=java-2.1.0&w=50&s=a482df91be5a577f5a30eef5107d8e82"></ion-img>
+                <div id="spans">
+                    <span id>Imperial</span>
+                    <span> - : - </span>
+                    <span id="not"> Nothern Forces</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </ion-content>

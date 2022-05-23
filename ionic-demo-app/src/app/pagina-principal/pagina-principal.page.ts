@@ -14,7 +14,6 @@ export class PaginaPrincipalPage {
   exibirMatches() {
     this.navegador.navigateForward('matches');
   }
-
   exibirResults() {
     this.navegador.navigateForward('results');
   }

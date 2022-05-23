@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { PaginaPrincipalPage } from './../pagina-principal/pagina-principal.page';
+import { Component } from '@angular/core';
+import { AlertController } from '@ionic/angular';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-matches',
   templateUrl: './matches.page.html',
   styleUrls: ['./matches.page.scss'],
 })
-export class MatchesPage implements OnInit {
+export class MatchesPage {
 
-  constructor() { }
+  constructor(public alertController: AlertController, public navegador: NavController) { }
 
-  ngOnInit() {
+  paginaPrincipal(){
+    this.navegador.navigateForward('pagina-principal')
   }
-
+  exibirResults() {
+    this.navegador.navigateForward('results');
+  }
 }

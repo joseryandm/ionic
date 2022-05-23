@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { AlertController } from '@ionic/angular';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-results',
   templateUrl: './results.page.html',
   styleUrls: ['./results.page.scss'],
 })
-export class ResultsPage implements OnInit {
+export class ResultsPage  {
 
-  constructor() { }
+  constructor(public alertController: AlertController, public navegador: NavController) { }
 
-  ngOnInit() {
+  exibirMatches() {
+    this.navegador.navigateForward('matches');
   }
-
+  paginaPrincipal(){
+    this.navegador.navigateForward('pagina-principal')
+  }
 }

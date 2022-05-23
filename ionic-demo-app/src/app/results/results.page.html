@@ -1,9 +1,162 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>results</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-tab-bar slot="top">
+    <ion-tab-button (click)="paginaPrincipal()" tab="home">
+        <ion-icon name="home"></ion-icon>
+        <ion-label>Home</ion-label>
+    </ion-tab-button>
+    <ion-tab-button (click)="exibirMatches()" tab="Matches">
+        <ion-icon name="contract-outline"></ion-icon>
+        <ion-label>Matches</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="Results">
+        <ion-icon name="bar-chart-outline"></ion-icon>
+        <ion-label>Results</ion-label>
+    </ion-tab-button>
+</ion-tab-bar>
 
 <ion-content>
-
+    <div id="back">
+        <div id="matchesBox">
+            <h2 id="headline2">Recent results for Imperial</h2>
+            <div id="table">
+                <span id="date">Date</span>
+                <span id="matches">Matches</span>
+            </div>
+            <div id="statsBox2">
+                <div id="stat3">PGL Major Antwerp 2022 - 9-11th</div>
+            </div>
+            <div id="table1">
+                <span id="date1">17/05/2022</span>
+                <span id="matches1">Matches</span>
+            </div>
+            <div id="times">
+                <ion-img id="logo" src="https://img-cdn.hltv.org/teamlogo/WF5P55R5fxcmhoew6vHZQr.png?ixlib=java-2.1.0&w=200&s=993151de8af78c610d7b6da11ac954b9"></ion-img>
+                <ion-img id="logo2" src="https://img-cdn.hltv.org/teamlogo/o9gWbZqKaYgDJL5ttGKuqQ.png?ixlib=java-2.1.0&w=50&s=6a3e50d369c8777a5ce5059c1d7676b3"></ion-img>
+                <div id="spans">
+                    <span id="Imp">Imperial</span>
+                    <span id="result"> 0 : 2 </span>
+                    <span id="not"> Copenhagen Flames</span>
+                </div>
+            </div>
+            <div id="table2">
+                <span id="date1">16/05/2022</span>
+                <span id="matches1">Matches</span>
+            </div>
+            <div id="times1">
+                <ion-img id="logo1" src="https://img-cdn.hltv.org/teamlogo/WF5P55R5fxcmhoew6vHZQr.png?ixlib=java-2.1.0&w=200&s=993151de8af78c610d7b6da11ac954b9"></ion-img>
+                <ion-img id="logo3" src="https://img-cdn.hltv.org/teamlogo/bEgST6XoNV4ZdenRKzCQyl.svg?ixlib=java-2.1.0&s=bd9b10a8dfe7b3640103745687389e3c"></ion-img>
+                <div id="spans1">
+                    <span id="Imp1">Imperial</span>
+                    <span id="result1"> 2 : 1 </span>
+                    <span id="not1"> Cloud9</span>
+                </div>
+            </div>
+            <div id="table2">
+                <span id="date1">15/05/2022</span>
+                <span id="matches1">Matches</span>
+            </div>
+            <div id="times2">
+                <ion-img id="logo1" src="https://img-cdn.hltv.org/teamlogo/WF5P55R5fxcmhoew6vHZQr.png?ixlib=java-2.1.0&w=200&s=993151de8af78c610d7b6da11ac954b9"></ion-img>
+                <ion-img id="logo4" src="https://img-cdn.hltv.org/teamlogo/ohLs36jqZnmOpBFWDjk5Az.png?ixlib=java-2.1.0&w=50&s=9134cd551f79a9b0df6cb88f1c70d8a6"></ion-img>
+                <div id="spans2">
+                    <span id="Imp1">Imperial</span>
+                    <span id="result1"> 2 : 0 </span>
+                    <span id="not2"> Bad News Eagles</span>
+                </div>
+            </div>
+            <div id="table2">
+                <span id="date1">14/05/2022</span>
+                <span id="matches1">Matches</span>
+            </div>
+            <div id="times3">
+                <ion-img id="logoimp" src="https://img-cdn.hltv.org/teamlogo/WF5P55R5fxcmhoew6vHZQr.png?ixlib=java-2.1.0&w=200&s=993151de8af78c610d7b6da11ac954b9"></ion-img>
+                <ion-img id="logo5" src="https://img-cdn.hltv.org/teamlogo/zFLwAELOD15BjJSDMMNBWQ.png?ixlib=java-2.1.0&w=50&s=affb583e6716d8ee904826992255cc4b"></ion-img>
+                <div id="spans3">
+                    <span id="Imp1">Imperial</span>
+                    <span id="result1"> 12 : 16</span>
+                    <span id="not3">G2</span>
+                </div>
+            </div>
+            <div id="table3">
+                <span id="date1">14/05/2022</span>
+                <span id="matches1">Matches</span>
+            </div>
+            <div id="times4">
+                <ion-img id="logoimp" src="https://img-cdn.hltv.org/teamlogo/WF5P55R5fxcmhoew6vHZQr.png?ixlib=java-2.1.0&w=200&s=993151de8af78c610d7b6da11ac954b9"></ion-img>
+                <ion-img id="logo6" src="https://img-cdn.hltv.org/teamlogo/yQB6cm3KZ_BcyrgppBQMjc.svg?ixlib=java-2.1.0&s=06825290bfb61c9f8467f5c323f51974"></ion-img>
+                <div id="spans4">
+                    <span id="Imp1">Imperial</span>
+                    <span id="result1"> 11 : 16</span>
+                    <span id="not4">Big</span>
+                </div>
+            </div>
+            <div id="statsBox2">
+                <div id="stat3">PGL Major Antwerp 2022 Challengers Stage - 6-8th</div>
+            </div>
+            <div id="table1">
+                <span id="date1">12/05/2022</span>
+                <span id="matches1">Matches</span>
+            </div>
+            <div id="times">
+                <ion-img id="logo1" src="https://img-cdn.hltv.org/teamlogo/WF5P55R5fxcmhoew6vHZQr.png?ixlib=java-2.1.0&w=200&s=993151de8af78c610d7b6da11ac954b9"></ion-img>
+                <ion-img id="Forze" src="https://img-cdn.hltv.org/teamlogo/Qnpb1nBNLJUCyf4fRMFbzr.svg?ixlib=java-2.1.0&s=a798b973c429361844ee174e07ae2401"></ion-img>
+                <div id="spans">
+                    <span id="Imp">Imperial</span>
+                    <span id="result"> 2 : 0 </span>
+                    <span id="forze"> Forze</span>
+                </div>
+            </div>
+            <div id="table2">
+                <span id="date1">11/05/2022</span>
+                <span id="matches1">Matches</span>
+            </div>
+            <div id="times1">
+                <ion-img id="logo1" src="https://img-cdn.hltv.org/teamlogo/WF5P55R5fxcmhoew6vHZQr.png?ixlib=java-2.1.0&w=200&s=993151de8af78c610d7b6da11ac954b9"></ion-img>
+                <ion-img id="logo3" src="https://img-cdn.hltv.org/teamlogo/RELZqHNwABoCDW8mpf2mII.png?ixlib=java-2.1.0&w=50&s=8ab1f76c3ef361621097f1ad14b44f95"></ion-img>
+                <div id="spans1">
+                    <span id="Imp1">Imperial</span>
+                    <span id="result1"> 2 : 1 </span>
+                    <span id="ihc"> IHC </span>
+                </div>
+            </div>
+            <div id="table2">
+                <span id="date1">10/05/2022</span>
+                <span id="matches1">Matches</span>
+            </div>
+            <div id="times2">
+                <ion-img id="logoimp" src="https://img-cdn.hltv.org/teamlogo/WF5P55R5fxcmhoew6vHZQr.png?ixlib=java-2.1.0&w=200&s=993151de8af78c610d7b6da11ac954b9"></ion-img>
+                <ion-img id="bne" src="https://img-cdn.hltv.org/teamlogo/ohLs36jqZnmOpBFWDjk5Az.png?ixlib=java-2.1.0&w=50&s=9134cd551f79a9b0df6cb88f1c70d8a6"></ion-img>
+                <div id="spans2">
+                    <span id="Imp1">Imperial</span>
+                    <span id="result1"> 12 : 16 </span>
+                    <span id="BNE"> Bad News Eagles</span>
+                </div>
+            </div>
+            <div id="table2">
+                <span id="date1">09/05/2022</span>
+                <span id="matches1">Matches</span>
+            </div>
+            <div id="times3">
+                <ion-img id="logo1" src="https://img-cdn.hltv.org/teamlogo/WF5P55R5fxcmhoew6vHZQr.png?ixlib=java-2.1.0&w=200&s=993151de8af78c610d7b6da11ac954b9"></ion-img>
+                <ion-img id="Liquid" src="https://img-cdn.hltv.org/teamlogo/JMeLLbWKCIEJrmfPaqOz4O.svg?ixlib=java-2.1.0&s=c02caf90234d3a3ebac074c84ba1ea62"></ion-img>
+                <div id="spans3">
+                    <span id="Imp1">Imperial</span>
+                    <span id="result1"> 16 : 10</span>
+                    <span id="liquid">Liquid</span>
+                </div>
+            </div>
+            <div id="table3">
+                <span id="date1">09/05/2022</span>
+                <span id="matches1">Matches</span>
+            </div>
+            <div id="times4">
+                <ion-img id="logoimp" src="https://img-cdn.hltv.org/teamlogo/WF5P55R5fxcmhoew6vHZQr.png?ixlib=java-2.1.0&w=200&s=993151de8af78c610d7b6da11ac954b9"></ion-img>
+                <ion-img id="logo6" src="https://img-cdn.hltv.org/teamlogo/ywdn4tmAvXfllLeV2SkkvF.png?ixlib=java-2.1.0&w=50&s=9c70c7fbb048348f70f686acd2369c58"></ion-img>
+                <div id="spans4">
+                    <span id="Imp1">Imperial</span>
+                    <span id="result1"> 6 : 16</span>
+                    <span id="not4">Spirit</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </ion-content>
