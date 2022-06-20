@@ -6,54 +6,61 @@
     </ion-toolbar>
 </ion-header>
 <ion-content [fullscreen]="true">
-    <div id="tela">
-        <ion-item id="name">
-            <ion-label position="floating" id="name">Name:</ion-label>
-            <ion-input type="text"></ion-input>
-        </ion-item>
-        <ion-item id="username">
-            <ion-label position="floating" id="username">Username:</ion-label>
-            <ion-input type="text"></ion-input>
-        </ion-item>
-        <ion-item id="email">
-            <ion-label position="floating" id="email">Email:</ion-label>
-            <ion-input type="email"></ion-input>
-        </ion-item>
-        <ion-item id="date">
-            <ion-label position="stacked" id="date">Data de Nascimento:</ion-label>
-            <ion-input type="date"></ion-input>
-        </ion-item>
+    <div id="foto">
         <ion-item>
-            <ion-label id="Q">Qual torcida você é?:</ion-label>
+            <ion-img id="default" src="../../assets/avatardefault_92824.png" (click)="addPhotoToGallery()"></ion-img>
+            <ion-col id="fotoPerfil" *ngFor="let photo of photoService.photos; index as position">
+                <ion-img id="fotoPerfil" [src]="photo.webviewPath"></ion-img>
+            </ion-col>
         </ion-item>
-        <div id="check">
-            <ion-item id="ali">
-                <ion-checkbox></ion-checkbox>
-                <ion-label id="al"> Alienados Imperial</ion-label>
-            </ion-item>
-            <ion-item id="ali">
-                <ion-checkbox></ion-checkbox>
-                <ion-label id="checkbox"> Guarda Imperial</ion-label>
-            </ion-item>
-            <ion-item id="ali">
-                <ion-checkbox></ion-checkbox>
-                <ion-label id="checkbox"> Lunáticos Imperial</ion-label>
-            </ion-item>
-            <ion-item id="ali">
-                <ion-checkbox></ion-checkbox>
-                <ion-label id="checkbox"> Lancha Verde</ion-label>
-            </ion-item>
-            <ion-item id="ali">
-                <ion-checkbox></ion-checkbox>
-                <ion-label id="checkbox"> Lança Verde</ion-label>
-            </ion-item>
-        </div>
-        <ion-item id="senha">
-            <ion-label position="floating" id="senha">Password:</ion-label>
-            <ion-input type="password"></ion-input>
+    </div>
+    <h5>Inserir imagem:</h5>
+    <ion-item id="name">
+        <ion-label position="floating" id="name">Name:</ion-label>
+        <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item id="username">
+        <ion-label position="floating" id="username">Username:</ion-label>
+        <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item id="email">
+        <ion-label position="floating" id="email">Email:</ion-label>
+        <ion-input type="email"></ion-input>
+    </ion-item>
+    <ion-item id="date">
+        <ion-label position="stacked" id="date">Data de Nascimento:</ion-label>
+        <ion-input type="date"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label id="Q">Qual torcida você é?:</ion-label>
+    </ion-item>
+    <div id="check">
+        <ion-item id="ali">
+            <ion-checkbox></ion-checkbox>
+            <ion-label id="al"> Alienados Imperial</ion-label>
         </ion-item>
-        <div id="btt">
-            <ion-button color="primary" id="btc" (click)="paginaPrincipal()">Cadastrar-se</ion-button>
-        </div>
+        <ion-item id="ali">
+            <ion-checkbox></ion-checkbox>
+            <ion-label id="checkbox"> Guarda Imperial</ion-label>
+        </ion-item>
+        <ion-item id="ali">
+            <ion-checkbox></ion-checkbox>
+            <ion-label id="checkbox"> Lunáticos Imperial</ion-label>
+        </ion-item>
+        <ion-item id="ali">
+            <ion-checkbox></ion-checkbox>
+            <ion-label id="checkbox"> Lancha Verde</ion-label>
+        </ion-item>
+        <ion-item id="ali">
+            <ion-checkbox></ion-checkbox>
+            <ion-label id="checkbox"> Lança Verde</ion-label>
+        </ion-item>
+    </div>
+    <ion-item id="senha">
+        <ion-label position="floating" id="senha">Password:</ion-label>
+        <ion-input type="password"></ion-input>
+    </ion-item>
+    <div id="btt">
+        <ion-button color="primary" id="btc" (click)="paginaPrincipal()">Cadastrar-se</ion-button>
     </div>
 </ion-content>
