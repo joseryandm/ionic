@@ -24,7 +24,6 @@
 #btt {
     align-items: center;
     text-align: center;
-    position: relative;
     padding: 2px 2px 2px 2px;
     font-family: 'lobster';
     margin-top: 20%;
@@ -33,14 +32,15 @@
 #btl {
     font-family: 'lobster';
     margin-right: 10px;
-    width: 35%;
+    width: 38%;
+    font-size: 1.1rem;
 }
 
 #btc {
     font-family: 'lobster';
-    font-size: 1rem;
-    margin-left: 10px;
-    width: 58%;
+    font-size: 1.1rem;
+    margin-left: 5px;
+    width: auto;
 }
 
 #titulo {
@@ -49,11 +49,14 @@
     width: auto;
 }
 
-#title {
+h2{
     font-family: 'lobster';
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: center;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 85px;
 }
 
 #box {
@@ -61,7 +64,26 @@
     padding: 8px 16px 16px;
     position: relative;
     z-index: 1;
-    margin-bottom: 16px;
-    height: 84%;
-    overflow: hidden;
+    margin-top: 5px;
+}
+
+ion-content{
+    --background: black;
+}
+
+ion-img{
+    max-width: 50px;
+    max-height: 50px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#logo{
+    height: 100px;
+    margin-top: 5px;
+}
+
+p{
+    color: white;
 }

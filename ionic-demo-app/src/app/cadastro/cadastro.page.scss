@@ -13,7 +13,6 @@
 }
 
 ion-content {
-    --background: black;
     overflow: hidden;
 }
 
@@ -50,7 +49,7 @@ ion-content {
 #ali {
     font-family: 'lobster';
     font-size: 0.9rem;
-    color: whitesmoke;
+    color: black;
 }
 
 #check {
@@ -63,12 +62,11 @@ ion-content {
     font-family: 'lobster';
     text-align: center;
     font-size: 1.2rem;
-    color: whitesmoke;
+    color: black;
     height: 15px;
 }
 
 #foto {
-    background: black;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -77,14 +75,14 @@ ion-content {
 }
 
 #default {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     cursor: pointer;
     margin-top: 5px;
 }
 
 h5 {
-    color: whitesmoke;
+    color: black;
     align-items: center;
     text-align: center;
     font-family: 'lobster';
@@ -98,8 +96,8 @@ h5 {
 #fotoPerfil {
     position: absolute;
     float: left;
-    right: 8%;
-    width: 102px;
-    height: 102px;
+    right: 2%;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
 }

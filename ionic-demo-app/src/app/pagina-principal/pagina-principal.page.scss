@@ -3,6 +3,11 @@
     left: 5px;
 }
 
+b{
+    color: white;
+    font-family: 'lobster';
+}
+
 #logo {
     max-width: 50px;
     max-height: 50px;
@@ -36,6 +41,7 @@
     right: 50%;
     font-family: 'lobster';
     font-size: 1.5rem;
+    color: white;
 }
 
 #namebra {
@@ -44,7 +50,7 @@
     font-size: 0.7rem;
     float: right;
     right: 62%;
-    color: gray;
+    color: white;
     font-family: 'lobster';
 }
 
@@ -93,6 +99,7 @@
     float: right;
     right: 10px;
     position: absolute;
+    color: white;
 }
 
 #span {
@@ -899,4 +906,12 @@
 #Vinibox {
     height: 170px;
     width: 100%;
+}
+
+ion-tab-bar{
+    --background: black;
+}
+
+ion-content{
+    --background: black;
 }
