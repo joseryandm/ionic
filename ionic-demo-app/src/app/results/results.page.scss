@@ -392,3 +392,11 @@
     right: 41%;
     filter: grayscale(2) brightness(1.35);
 }
+
+ion-tab-bar{
+    --background: black;
+}
+
+ion-content{
+    --background: black;
+}

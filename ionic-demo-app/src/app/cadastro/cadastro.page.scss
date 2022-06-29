@@ -26,6 +26,14 @@ ion-content {
     text-decoration: none;
 }
 
+#logo{
+    text-align: center;
+    font-family: 'lobster';
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: white;
+}
+
 #btt {
     align-items: center;
     text-align: center;
@@ -49,7 +57,7 @@ ion-content {
 #ali {
     font-family: 'lobster';
     font-size: 0.9rem;
-    color: black;
+    color: white;
 }
 
 #check {
@@ -62,7 +70,7 @@ ion-content {
     font-family: 'lobster';
     text-align: center;
     font-size: 1.2rem;
-    color: black;
+    color: white;
     height: 15px;
 }
 
@@ -72,6 +80,7 @@ ion-content {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    --background: black;
 }
 
 #default {
@@ -82,7 +91,7 @@ ion-content {
 }
 
 h5 {
-    color: black;
+    color: white;
     align-items: center;
     text-align: center;
     font-family: 'lobster';
@@ -100,4 +109,16 @@ h5 {
     width: 110px;
     height: 110px;
     border-radius: 50%;
+}
+
+ion-content{
+    --background: black;
+    overflow: hidden;
+    ::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+ion-item{
+    --background: black;
 }
