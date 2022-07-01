@@ -1,0 +1,124 @@
+#container {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 5%;
+    transform: translateY(-50%);
+}
+
+#container strong {
+    font-size: 1.1rem;
+    line-height: 26px;
+}
+
+ion-content {
+    overflow: hidden;
+}
+
+#container p {
+    font-size: 1.1rem;
+    line-height: 22px;
+    margin: 0;
+}
+
+#container a {
+    text-decoration: none;
+}
+
+#logo{
+    text-align: center;
+    font-family: 'lobster';
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: white;
+}
+
+#btt {
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 2px 2px 2px 2px;
+}
+
+#btc {
+    font-family: 'lobster';
+    margin-left: 10px;
+    width: 47%;
+}
+
+#name,
+#username,
+#email,
+#date,
+#Q,
+#check,
+#senha,
+#ali {
+    font-family: 'lobster';
+    font-size: 0.9rem;
+    color: white;
+}
+
+#check {
+    height: 80px;
+    overflow: auto;
+    font-family: 'lobster';
+}
+
+#cadastro {
+    font-family: 'lobster';
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    height: 15px;
+}
+
+#foto {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    --background: black;
+}
+
+#default {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+h5 {
+    color: white;
+    align-items: center;
+    text-align: center;
+    font-family: 'lobster';
+    font-size: 1.2rem;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#fotoPerfil {
+    position: absolute;
+    float: left;
+    right: 2%;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+
+ion-content{
+    --background: black;
+    overflow: hidden;
+    ::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+ion-item{
+    --background: black;
+}
