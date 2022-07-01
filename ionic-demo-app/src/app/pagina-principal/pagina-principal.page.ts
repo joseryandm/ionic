@@ -17,4 +17,7 @@ export class PaginaPrincipalPage {
   exibirResults() {
     this.navegador.navigateForward('results');
   }
+  sair() {
+    this.navegador.navigateForward('home');
+  }
 }

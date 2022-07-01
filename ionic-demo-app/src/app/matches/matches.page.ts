@@ -18,4 +18,7 @@ export class MatchesPage {
   exibirResults() {
     this.navegador.navigateForward('results');
   }
+  sair() {
+    this.navegador.navigateForward('home');
+  }
 }
